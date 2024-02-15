@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://driyas0ps0o77"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_hpsa1"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_kxx8t"]
+
+[node name="Bullet" type="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, -4.39789e-08, -1.00044, 0, 1.00612, -4.37308e-08, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+mesh = SubResource("SphereMesh_hpsa1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+shape = SubResource("SphereShape3D_kxx8t")
